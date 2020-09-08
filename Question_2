@@ -1,0 +1,20 @@
+A) 54
+
+SELECT ShipperID FROM Shippers
+WHERE ShipperName = 'Speedy Express';
+
+SELECT ShipperID, COUNT(ShipperID)AS Frequency
+FROM Orders
+GROUP BY ShipperID;
+
+
+B) Peacock
+
+SELECT EmployeeID, COUNT(EmployeeID)AS Frequency
+FROM Orders
+GROUP BY EmployeeID
+ORDER BY COUNT(EmployeeID) DESC;
+
+SELECT LastName FROM Employees
+WHERE EmployeeID = 4
+
